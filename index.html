@@ -2,32 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/techcorp-website/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TechCore | Embedded Solutions</title>
     <meta name="description" content="TechCore - Leading embedded systems, MCU development, and electronic product design company." />
+    <script type="module" crossorigin src="/techcorp-website/assets/index-B3cCyfJs.js"></script>
     <link rel="stylesheet" crossorigin href="/techcorp-website/assets/index-BIW0e6Es.css">
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" crossorigin src="/techcorp-website/assets/index-DlAtWJtH.js"></script>
-    <script>
-    // Handle SPA routing from GitHub Pages 404 redirect
-    // 404.html redirects /services/embedded-systems to /?/services/embedded-systems
-    (function() {
-      var search = window.location.search;
-      // Match /?/path or &/path pattern
-      var match = search.match(/[?&]\/?([^&]*)/);
-      if (match && match[1]) {
-        var redirectPath = '/' + match[1];
-        // Clean up the search string
-        var cleanSearch = search.replace(/[?&]\/?[^&]*/, '').replace(/^&/, '?');
-        var newUrl = window.location.pathname + redirectPath + cleanSearch + window.location.hash;
-        window.history.replaceState(null, null, newUrl);
-        // Force React Router to recognize the new path
-        window.dispatchEvent(new PopStateEvent('popstate', { state: null }));
-      }
-    })();
-    </script>
+    <div id="root"></div>
   </body>
 </html>
