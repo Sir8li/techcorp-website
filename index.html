@@ -8,8 +8,20 @@
     <meta name="description" content="TechCore - Leading embedded systems, MCU development, and electronic product design company." />
     <script type="module" crossorigin src="/techcorp-website/assets/index-DlAtWJtH.js"></script>
     <link rel="stylesheet" crossorigin href="/techcorp-website/assets/index-BIW0e6Es.css">
-  </head>
+    <script>
+    // Handle SPA routing from GitHub Pages 404 redirect
+    (function() {
+      var path = window.location.search.match(/[?&]\/([^&]*)/);
+      if (path) {
+        var newPath = path[1] || '';
+        var search = window.location.search.replace(/[?&]\/[^&]*/, '').replace(/^[?&]/, '');
+        history.replaceState(null, null, window.location.pathname + newPath + (search ? '?' + search : '') + window.location.hash);
+      }
+    })();
+  </script>
+</head>
   <body>
-    <div id="root"></div>
+    <div id="root"></div>
+
   </body>
 </html>
